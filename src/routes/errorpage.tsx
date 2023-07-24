@@ -1,10 +1,11 @@
 import { Footer } from "../components/footer/footer";
 import { Header } from "../components/header/header";
-import darkError404 from "../assets/dark-error.json";
-import lightError404 from "../assets/light-error.json";
-import Lottie from "lottie-react";
+// import darkError404 from "../assets/dark-error.json";
+// import lightError404 from "../assets/light-error.json";
+// import Lottie from "lottie-react";
 
-export const ErrorPage = ({ isDarkMode }: { isDarkMode: boolean }) => {
+//{ isDarkMode }: { isDarkMode: boolean }
+export const ErrorPage = () => {
   return (
     <div className="bg-slate-100 dark:bg-darkSlate">
       <Header />
@@ -15,7 +16,7 @@ export const ErrorPage = ({ isDarkMode }: { isDarkMode: boolean }) => {
             Sorry, the page you're looking for could not be found. This might be due to an incorrect URL, a removed page, or a temporary server issue. Please check the URL and try again.
           </p>
         </div>
-        <Lottie className="w-500 lg:hidden" animationData={isDarkMode ? darkError404 : lightError404} />
+        {/* <Lottie className="w-500 lg:hidden" animationData={isDarkMode ? darkError404 : lightError404} /> */}
       </div>
       <Footer />
     </div>
