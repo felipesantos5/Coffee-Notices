@@ -1,8 +1,8 @@
 import { Footer } from "../components/footer/footer";
 import { Header } from "../components/header/header";
+import Lottie from "lottie-react";
 import darkError404 from "../assets/dark-error.json";
 import lightError404 from "../assets/light-error.json";
-import Lottie from "lottie-react";
 
 export const ErrorPage = ({ isDarkMode }: { isDarkMode?: boolean }) => {
   return (
