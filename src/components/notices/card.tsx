@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { SkeletonCard } from "../loading/skeletonCard";
 
-const API_KEY = process.env.REACT_APP_API_KEY;
-
 interface Article {
   title: string;
   image: string;
@@ -22,13 +20,15 @@ const Card = () => {
 
   useEffect(() => {
     const fetchData = async () => {
+      const API_KEY = process.env.REACT_APP_API_KEY;
+      const url = `https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=${API_KEY}`;
       try {
-        const response = await fetch(`https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=${API_KEY}`);
+        const response = await fetch(url);
         const data = await response.json();
         setNews(data.articles);
         setLoading(false);
       } catch (error) {
-        console.log("Error:", error);
+        console.error("Error:", error);
         setLoading(false);
       }
     };
