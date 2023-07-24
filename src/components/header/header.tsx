@@ -1,11 +1,14 @@
+import { DarkModeToggle } from "../darkModeButton/darkModeButton";
+
 export const Header = () => {
   return (
-    <header className="flex">
-      <div>
-        <img src="" alt="" />
-        <h1 className="font-bold text-4xl">BTCNEWS</h1>
+    <header className="h-10 p-6 bg-slate-100 dark:bg-darkSlate">
+      <div className="flex items-center justify-between px-8 max-w-5xl m-auto">
+        <div className="flex items-center gap-1">
+          <h1 className="font-bold text-5xl text-black dark:text-slate-100">Web Notices</h1>
+        </div>
+        <DarkModeToggle />
       </div>
-      <nav></nav>
     </header>
   );
 };
