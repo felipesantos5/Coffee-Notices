@@ -4,7 +4,7 @@ import darkError404 from "../assets/dark-error.json";
 import lightError404 from "../assets/light-error.json";
 import Lottie from "lottie-react";
 
-export const Errorpage = ({ isDarkMode }: { isDarkMode?: boolean }) => {
+export const ErrorPage = ({ isDarkMode }: { isDarkMode?: boolean }) => {
   return (
     <div className="bg-slate-100 dark:bg-darkSlate">
       <Header />
