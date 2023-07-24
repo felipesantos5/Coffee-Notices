@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
-const DarkModeToggle = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+export const DarkModeToggle = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
     // Verifica se há um valor salvo no localStorage
@@ -30,5 +30,3 @@ const DarkModeToggle = () => {
     </button>
   );
 };
-
-export default DarkModeToggle;
