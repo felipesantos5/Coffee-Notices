@@ -54,7 +54,7 @@ const Card = () => {
           : news.map((article, index) => (
               <div key={index} className="flex justify-center px-6 py-14 max-h-650 max-w-5xl m-auto overflow-hidden md:flex-col-reverse md:max-w-full md:max-h-full md:pb-8 dark:text-slate-100">
                 <div>
-                  <img src={article.image} alt="" className="w-500 max-h-96 rounded-xl md:w-full" />
+                  <img src={article.image} alt="" className="w-500 max-h-96 rounded-xl pointer-events-none md:w-full" />
                 </div>
                 <div className="w-2/4 max-h-96 max-w-4xl pl-6 md:max-w-full md:w-full md:mb-4 md:max-h-full md:pl-0">
                   <a className="text-darkBrown font-semibold dark:text-slate-100" href={article.url} target="_blank">
