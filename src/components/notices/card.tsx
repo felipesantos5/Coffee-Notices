@@ -24,7 +24,7 @@ const Card = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const API_KEY = process.env.REACT_APP_API_KEY;
+      const API_KEY = "567cd3f60932e5ac2fb5479ab5698354";
       const url = `https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=${API_KEY}`;
       try {
         const response = await fetch(url);
