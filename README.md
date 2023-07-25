@@ -2,6 +2,8 @@
 
 Web-Notices is a modern web application for news developed using cutting-edge technologies like React, TypeScript, and Tailwind CSS. This project aims to provide an intuitive and interactive platform for users to stay updated on the latest happenings around the world.
 
+![Example Image](src/assets/web-notices.png)
+
 ## Technologies Used
 
 - **Vite:** Web-Notices is built on Vite, a fast and lightweight development tool that optimizes the project's build and development process.
