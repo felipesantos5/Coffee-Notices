@@ -14,7 +14,7 @@ Web-Notices is a modern web application for news developed using cutting-edge te
 
 ## Deployment
 
-The Web-Notices application is deployed on [Vercel]([https://vercel.com](https://web-notices.vercel.app/)), ensuring a seamless and efficient user experience.
+The Web-Notices application is deployed on [**VERCEL**](https://web-notices.vercel.app/), ensuring a seamless and efficient user experience.
 
 ## How to Use
 
