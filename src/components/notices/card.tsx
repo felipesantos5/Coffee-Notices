@@ -10,7 +10,6 @@ import { Article } from "../../types/types";
 const Card = () => {
   const [news, setNews] = useState<Article[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,15 +19,10 @@ const Card = () => {
         setLoading(false);
       } catch (error) {
         setLoading(false);
-        setError(true);
       }
     };
     fetchData();
   }, []);
-
-  if (error) {
-    return <Errorpage />;
-  }
 
   return (
     <>
