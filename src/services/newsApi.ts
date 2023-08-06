@@ -3,7 +3,7 @@ import { Article} from '../types/types';
 const filterUniqueArticles = (articles: Article[]): Article[] => {
   const uniqueArticles: Article[] = [];
   articles.forEach((article: Article) => {
-    if (!uniqueArticles.some((existingArticle) => existingArticle.title === article.title)) {
+    if (!uniqueArticles.some((existingArticle) => existingArticle.image === article.image)) {
       uniqueArticles.push(article);
     }
   });
