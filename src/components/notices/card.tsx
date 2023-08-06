@@ -4,18 +4,8 @@ import { SkeletonCard } from "../loading/skeletonCard";
 import { Errorpage } from "../../routes/errorpage";
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
-
-interface Article {
-  title: string;
-  image: string;
-  description: string;
-  content: string;
-  publishedAt: string;
-  url: string;
-  source: {
-    name: string;
-  };
-}
+import { fetchNewsData } from "../../services/newsApi";
+import { Article } from "../../types/types";
 
 const Card = () => {
   const [news, setNews] = useState<Article[]>([]);
@@ -24,20 +14,15 @@ const Card = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const API_KEY = "567cd3f60932e5ac2fb5479ab5698354";
-      const url = `https://gnews.io/api/v4/search?q=example&lang=en&country=us&max=10&apikey=${API_KEY}`;
       try {
-        const response = await fetch(url);
-        const data = await response.json();
-        setNews(data.articles);
+        const newsData = await fetchNewsData();
+        setNews(newsData);
         setLoading(false);
       } catch (error) {
-        console.error("Error:", error);
         setLoading(false);
         setError(true);
       }
     };
-
     fetchData();
   }, []);
 
