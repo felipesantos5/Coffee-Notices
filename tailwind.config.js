@@ -11,6 +11,7 @@ export default {
       xmd: { max: "600px" },
       sm: { max: "670px" },
       xsm: { max: "500px" },
+      xxsm: { max: "380px" },
     },
     extend: {
       spacing: {

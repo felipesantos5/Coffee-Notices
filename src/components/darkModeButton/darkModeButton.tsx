@@ -21,7 +21,7 @@ export const DarkModeToggle = () => {
   }, [isDarkMode]);
 
   return (
-    <button className={`xsm:hidden relative w-16 h-9 rounded-full ${isDarkMode ? "bg-slate-100" : "bg-darkSlate"}`} onClick={toggleDarkMode}>
+    <button className={`xxsm:hidden relative w-16 h-9 rounded-full ${isDarkMode ? "bg-slate-100" : "bg-darkSlate"}`} onClick={toggleDarkMode}>
       <div className={`absolute top-1 left-1 w-7 h-7 rounded-full transition-transform ${isDarkMode ? "bg-darkSlate translate-x-full" : "bg-slate-100 translate-x-0.5"}`}></div>
     </button>
   );
