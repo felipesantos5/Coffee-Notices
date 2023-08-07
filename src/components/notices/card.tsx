@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { SkeletonCard } from "../loading/skeletonCard";
-import { Errorpage } from "../../routes/errorpage";
 import { Header } from "../header/header";
 import { Footer } from "../footer/footer";
 import { fetchNewsData } from "../../services/newsApi";
